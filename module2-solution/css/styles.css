@@ -1,0 +1,88 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Sans-Serif;
+}
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+/* Need to set padding on both sides of row to half of our usual padding */
+.row {
+  width: 100%;
+  padding: 0px 7.5px;
+}
+
+/* Add another half of our usual padding to left and right side each column to make them appear separated by equal amounts of padding regardless how many columns there are */
+.col {
+  float: left;
+  padding: 0px 7.5px;
+}
+
+/* Styles for the three sections */
+.mysec {  
+  border: 1px solid black;
+  position: relative;
+  padding: 35px 15px 15px 15px;
+  margin-bottom: 15px;
+  background-color: deepskyblue;
+}
+
+/* Styles for the section title */
+.mysec div {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+/* Title specific styles */
+.title1 {
+  background-color: azure;
+}
+
+.title2 {
+  background-color:dodgerblue;
+  color: white;
+}
+
+.title3 {
+  background-color: darkgray;
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/* Tablets styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+  }    
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .col-md-12 {
+    width: 100%;
+  }
+}
